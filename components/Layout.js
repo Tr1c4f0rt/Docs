@@ -1,12 +1,11 @@
 import NavBar from './NavBar';
-import Head from 'next/head';
 
-function Layout({ children }) {
+function Layout(props) {
 
     return (<div>                           
-                <NavBar />
-                <div className="container">
-                    {children}
+                <NavBar isHome={props.isHome} />
+                <div>
+                    {props.children}
                 </div>    
             </div>)
 

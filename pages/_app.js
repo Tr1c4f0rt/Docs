@@ -3,6 +3,8 @@ import { Tina, TinaCMS } from 'tinacms';
 import { GitClient, GitMediaStore } from '@tinacms/git-client';
 import '../estil/estil.scss';
 
+
+
 class theApp extends App {
   constructor() {
     super();
@@ -10,6 +12,9 @@ class theApp extends App {
     const client = new GitClient('http://localhost:3000/___tina');
     this.cms.registerApi('git', client);
     this.cms.media.store = new GitMediaStore(client);
+
+    // Afegir Gun
+
   }
   render() {
     const { Component, pageProps } = this.props
