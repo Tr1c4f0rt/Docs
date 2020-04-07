@@ -6,7 +6,7 @@ import { useLocalJsonForm } from 'next-tinacms-json'
 
 
 // Comps
-import NavBar from '../components/NavBar';
+import FooterNavBar from '../components/FooterNavBar';
 
 const Inici = ({ jsonFile }) => {
 
@@ -38,9 +38,12 @@ const Inici = ({ jsonFile }) => {
             </p>           
           </div>
         </div>
+        <div className="hero-foot">
+                    <FooterNavBar/>
+                </div>
       </section>
 
-     <NavBar isHome={true}/>
+     
 
     </div>
   )

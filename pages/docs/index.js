@@ -1,30 +1,28 @@
 import Link from 'next/link'
 
 // Comps
-import NavBar from '../../components/Layout';
+import FooterNavBar from '../../components/FooterNavBar';
+
 
 function Docs() {
 
     return (     
-            <div className="hero is-fullheight">
-                <div className="hero-head">
-                    <NavBar/>
-                </div>
+            <div className="hero is-fullheight">               
                 <div className="hero-body is-centered">
                     <div className="tile is-parent">
-                        <article className="tile is-child notification card is-warning carta-doc">
+                        <article className="tile is-child notification card is-danger carta-doc">
                             <div className="card-content">
                                 <p className="title">
                                     Document Zero
                             </p>
                                 <p className="subtitle">
-                                    Publicant-se
+                                    Ben aviat disponible. Et recomano començar pel document primer.
                             </p>
                             </div>
                             <footer className="card-footer">
                                 <p className="card-footer-item">
                                     <Link href="/docs/doc-zero/">
-                                        <a className="button is-small is-fullwidth">Llegir</a>
+                                        <a className="button is-small is-static is-fullwidth">Llegir</a>
                                     </Link>
                                 </p>
                             </footer>
@@ -33,19 +31,21 @@ function Docs() {
 
 
                     <div className="tile is-parent">
-                        <article className="tile is-child notification card is-primary carta-doc">
+                        <article className="tile is-child notification card is-warning carta-doc">
                             <div className="card-content">
                                 <p className="title">
-                                    Document Primer
-                            </p>
+                                   Document Primer</p>
                                 <p className="subtitle">
-                                    Pendent de publicació
+                                La Rosa, en Marcos i en Pep són tres joves que es veuen forçats a emprendre un viatge
+                                    a través d'una terra despoblada a causa de la misèria i la malaltia. De valors i conviccions ben diferents,
+                                    s'enfrontaran, cadascú per la seva banda, a decissions crucials per la seva vida i, qui sap, si per la dels 
+                                    altres. Grans sacrificis i dilemes morals els esperen en aquesta terra sense llei i plena de perills.
                             </p>
                             </div>
                             <footer className="card-footer">
                                 <p className="card-footer-item">
                                     <Link href="/docs/doc-primer/">
-                                        <a className="button is-small is-static is-fullwidth">Llegir</a>
+                                        <a className="button is-small is-fullwidth">Llegir</a>
                                     </Link>
                                 </p>
                             </footer>
@@ -60,7 +60,7 @@ function Docs() {
                                     Document Segon
                             </p>
                                 <p className="subtitle">
-                                    En producció
+                                    ...
                             </p>
                             </div>
                             <footer className="card-footer">
@@ -72,6 +72,9 @@ function Docs() {
                         </article>
                     </div>
 
+                </div>
+                <div className="hero-foot">
+                    <FooterNavBar/>
                 </div>
             </div>      
    )

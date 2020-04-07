@@ -8,6 +8,7 @@ function NavBar(props) {
     const [isFixed, setFixed] = useState("");
     const [isDropUp, setDropUp] = useState("");
     const [titol,setTitol] = useState("DOCS");
+    const [isBlack, setIfBlack] = useState("is-black");
 
     useEffect(()=>{
 
@@ -15,6 +16,7 @@ function NavBar(props) {
         if(isHome){        
             setDropUp("has-dropdown-up");
             setTitol("DOCS");
+            setIfBlack("");
         }
 
     })
@@ -41,7 +43,7 @@ function NavBar(props) {
 
     }
 
-    return( <nav className={`navbar ${isFixed}`} role="navigation" aria-label="main navigation">
+    return( <nav className={`navbar ${isFixed} ${isBlack}`} role="navigation" aria-label="main navigation">
     <div className="navbar-brand">
       <Link href="/">        
         <a className="navbar-item">
@@ -61,37 +63,32 @@ function NavBar(props) {
             <a className="navbar-item">
                Inici
             </a>
-          </Link>        
-
-        <Link href="/doczero/">
-            <a className="navbar-item">            
-                Últim Publicat            
+          </Link>   
+          
+          <Link href="/docs/doc-primer">        
+            <a className="navbar-item">
+               Document Primer
             </a>
-        </Link>   
+          </Link>    
+
 
         <div className={`navbar-item has-dropdown ${isDropUp} is-hoverable`}>
           <a className="navbar-link">
             Més
     </a>
           <div className="navbar-dropdown">
-          <Link href="/docs">
-            <a className="navbar-item">
-              Capítol 1
-            </a>
-         </Link>     
+          
+            <Link href="/funcionament">
+                <a className="navbar-item">
+                Privadesa
+                </a>
+            </Link>   
             <Link href="/aixo">
                 <a className="navbar-item">
                 Tot això
                 </a>
-            </Link>        
+            </Link>   
 
-      
-      <a className="navbar-item">
-              Funcionament
-      </a>      
-            <a className="navbar-item">
-              Contacte
-      </a>
           </div>
         </div>
       </div>

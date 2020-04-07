@@ -39,8 +39,8 @@ export default function Chapter(props) {
 
 
 export async function getStaticProps({ ...ctx }) {
-  const { slug } = ctx.params
-  const content = await import(`../../../content/docs/doc-primer/${slug}.md`);  
+  const { slug } = ctx.params  
+  const content = await import(`../../../content/docs/doc-primer/${slug}.md`); 
   const data = matter(content.default)
 
   return {
@@ -56,6 +56,7 @@ export async function getStaticPaths() {
 
   //get all .md files in the posts dir
   const capitols = await glob.sync('content/docs/doc-primer/**/*.md')
+ 
 
   //remove path and extension to leave filename only
   const slugs = capitols.map(file =>
@@ -64,14 +65,14 @@ export async function getStaticPaths() {
       .replace(/ /g, '-')
       .slice(0, -3)
       .trim()
-  )
+  )  
 
   // create paths with `slug` param
   const paths = slugs.map(slug => `/docs/doc-primer/${slug}`)
 
   return {
     paths,
-    fallback: true,
+    fallback: false,
   }
 }
 
