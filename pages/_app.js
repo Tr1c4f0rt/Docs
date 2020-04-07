@@ -8,7 +8,11 @@ import '../estil/estil.scss';
 class theApp extends App {
   constructor() {
     super();
-    this.cms = new TinaCMS();
+    this.cms = new TinaCMS({
+      sidebar: {
+        hidden: process.env.NODE_ENV === 'production',
+      },
+    });
     const client = new GitClient('http://localhost:3000/___tina');
     this.cms.registerApi('git', client);
     this.cms.media.store = new GitMediaStore(client);
