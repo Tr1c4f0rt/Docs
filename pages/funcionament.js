@@ -7,7 +7,7 @@ import { useLocalJsonForm } from 'next-tinacms-json'
 
 // Comps
 import Layout from '../components/Layout';
-import Brave from '/img/svg/brave.svg';
+import Brave from '../content/svg/logos/brave.svg';
 
 const Inici = ({ jsonFile }) => {
 
