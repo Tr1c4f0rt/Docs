@@ -1,7 +1,7 @@
 import React from 'react';
 import Gun from 'gun';
 
-const nomGraph = "gos";
+const nomGraph = "docs-arrels";
 
 //definir peers gun
 export const gunPeers = [];
