@@ -1,10 +1,11 @@
 // Got most of this at https://tinacms.org/blog/simple-markdown-blog-nextjs/
 
 // En aquest DOC faig proves amb Markdown
-import matter from 'gray-matter'
-import ReactMarkdown from 'react-markdown'
+import matter from 'gray-matter';
+import Link from 'next/link';
+import ReactMarkdown from 'react-markdown';
 import glob from 'glob';
-import { useLocalMarkdownForm } from 'next-tinacms-markdown'
+import { useLocalMarkdownForm } from 'next-tinacms-markdown';
 
 // Comps
 import Layout from '../../../components/Layout';
@@ -27,12 +28,22 @@ export default function Chapter(props) {
 
   return (
     <Layout>   
-       <section className="section">
-        <div className="content is-medium">
-          <h1>{data.frontmatter.titol}</h1>         
-          <ReactMarkdown source={data.markdownBody} />
-        </div>   
-      </section>
+      <div className="container">
+        <section className="section">
+          <div className="content is-medium">
+            <h1>{data.frontmatter.titol}</h1>         
+            <ReactMarkdown source={data.markdownBody} />
+          </div>   
+          <section className="level navegacio-capitols">
+            <Link href={data.frontmatter.ant}>
+              <a className="button is-small">Anterior</a>
+            </Link>
+            <Link href={data.frontmatter.seg}>
+              <a className="button  is-small">Següent</a>
+            </Link>
+          </section>
+        </section>
+      </div>
     </Layout>
   )
 }

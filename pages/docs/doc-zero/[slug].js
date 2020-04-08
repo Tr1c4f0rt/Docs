@@ -31,7 +31,15 @@ export default function Chapter(props) {
         <div className="content is-medium">
           <h1>{data.frontmatter.titol}</h1>         
           <ReactMarkdown source={data.markdownBody} />
-        </div>   
+        </div> 
+        <section className="level navegacio-capitols">
+            <Link href={data.frontmatter.ant}>
+              <a className="button is-small">Anterior</a>
+            </Link>
+            <Link href={data.frontmatter.seg}>
+              <a className="button  is-small">Següent</a>
+            </Link>
+          </section>  
       </section>
     </Layout>
   )
