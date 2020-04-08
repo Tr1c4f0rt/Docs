@@ -5,6 +5,7 @@ import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 import glob from 'glob';
 import { useLocalMarkdownForm } from 'next-tinacms-markdown'
+import Link from 'next/link'
 
 // Comps
 import Layout from '../../../components/Layout';
