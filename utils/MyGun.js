@@ -23,7 +23,7 @@ export async function ultimCapitol(req, path) {
 
     }
 
-    const gun = Gun();
+    const gun = Gun(gunPeers);
 
     // Break the path
     const parts = path.split('/');
@@ -63,7 +63,7 @@ export function initGun() {
 
     if (typeof window !== "undefined") {
 
-        const gun = Gun();
+        const gun = Gun(gunPeers);
 
         gun.get(nomGraph).once((res) => {
 

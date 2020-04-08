@@ -10,7 +10,7 @@ let gun
 
 if(typeof window !== undefined){
 
-  gun = Gun();
+  gun = Gun(gunPeers);
 
 }
 
