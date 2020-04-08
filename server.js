@@ -34,6 +34,7 @@ app.prepare().then(() => {
     return handle(req, res)
   })
 
+  gunApp.use(cors());
   gunApp.use(Gun.serve);
   const gunServer = gunApp.listen(gunPort);
   const gun = Gun({	web: gunServer });
