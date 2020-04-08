@@ -1,7 +1,7 @@
 ---
 titol: La malaltia
-ant: /docs/doc-primer/0_execucio
-seg: /docs/doc-primer/2_cami
+ant: /docs/doc-primer/00_execucio
+seg: /docs/doc-primer/02_cami
 ---
 Hi ha poca llum. La dansa de les flames de la llar de foc es veu reflectida a les parets de l’habitació. Embolicat amb mantes, en Juli jau enfebrat al llit. És un home d’espatlles amples. Agenollada al costat, la Rosa li eixuga la suor de la cara amb un mocador que s’ha tret de la butxaca de davant de la granota de pana que porta posada. Un vel de tristesa li enfosqueix la cara. Veu en Juli molt dèbil i cansat. El cor se li encongeix cada vegada que mira aquest homenot i el veu així d’arraulit i fràgil. En Juli obre els ulls. La Rosa s’afanya a construir un mur de somriure a la cara i li parla dolçament:
 

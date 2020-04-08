@@ -1,7 +1,7 @@
 ---
 titol: L'execució
 ant: /docs/doc-primer/
-seg: /docs/doc-primer/1_malaltia
+seg: /docs/doc-primer/01_malaltia
 ---
 En Pep apunta amb una pistola el cap de l’home que hi ha agenollat als seus peus. L’individu, ple de nafres i morats, somica aterrit. Un fil d’una fastigosa barreja de pols, sang i llàgrimes li regalima per la barbeta. La seva roba està empolsegada i feta malbé per tot arreu. La camisa esquinçada, l’americana plena d’esgarrinxades i els pantalons ben pelats. Només duu una sabata. El seu aspecte és el que mai cap ésser viu hauria de tenir: degradat. En Pep camina en cercle al seu voltant sota la mirada de dos homes armats i encaputxats que es mantenen a pocs metres de distància. En Pep es dirigeix al desmanegat: 
 

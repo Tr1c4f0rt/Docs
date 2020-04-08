@@ -1,7 +1,7 @@
 ---
 titol: Tot el que tinc
-ant: /docs/doc-primer/7_mon_es_com_es
-seg: /docs/doc-primer/
+ant: /docs/doc-primer/07_mon_es_com_es
+seg: /docs/doc-primer/09_no_sortia_a_compte
 ---
 El farmacèutic escolta atentament les explicacions d’en Marcos encara des de darrere del cadenat de la porta de casa seva. En Marcos li explica com van trobar en Juli malferit en aquella rasa, que s’havia clavat una branca a la cama en entrebancar-se i que, amb el cop de la caiguda, havia quedat estabornit. El van trobar al cap de tres o quatre hores. Li explica que tenia la ferida infectada, però que l’havien anat netejant amb aigua de farigola i havia anat millorant. També li explica que tenia molta febre i que li havien donat tot classe d’infusions i pegats per fer-l’hi baixar. El farmacèutic no sembla satisfet amb les explicacions d’en Marcos; el que li explica de la ferida i els símptomes, no lliguen gaire. Finalment, a força de més preguntes, en Marcos cau en el fet que en Juli tenia tota una granellada vermella al pit, però que s’havien pensat que era a causa de les ortigues. El farmacèutic sembla que ara en treu l’entrellat. 
 

@@ -2,39 +2,47 @@
 // EN aquesta pàgina s'han de mostrar tots els capitols del doc 0
 import Head from 'next/head';
 import matter from 'gray-matter'
+import { useContext } from 'react';
+
 
 // Comps
 import Layout from '../../../components/Layout';
 import FabricaCapitols from '../../../components/FabricaCapitols/';
 
-function Doc({capitols}){
 
-    return(<Layout>
+function Doc(props) {
+
+	const gun = useContext(GunContext);
+	const { capitols } = props;
+
+	return (<Layout>
 		<Head>
-				<title>Document Primer</title>
-                <link rel="icon" href="/favicon.ico" />
+			<title>Document Primer</title>
+			<link rel="icon" href="/favicon.ico" />
 		</Head>
-        	 <section className="hero is-light">
-                <div className="hero-body">
-                    <div className="container">
-                        <h1 className="title">
-                            Document Primer
-                        </h1>       
-						<h2 className="subtitle">
-							Comença el viatge</h2>                 
-                    </div>
-                </div>
+		<section className="hero is-light">
+			<div className="hero-body">
+				<div className="container">
+					<h1 className="title">
+						Document Primer
+                        </h1>
+					<h2 className="subtitle">
+						Comença el viatge</h2>
+				</div>
+			</div>
 
-            </section>
-			<section className="container llista-capitols">
-				<FabricaCapitols capitols={capitols}/>
-			</section>
+		</section>
+		<section className="container llista-capitols">
+			<FabricaCapitols capitols={capitols} />
+		</section>
 
-    </Layout>)
+	</Layout>)
 }
 
-Doc.getInitialProps = async function() {
-	
+
+
+Doc.getInitialProps = async function () {
+
 	// get all blog data for list
 	const capitols = (context => {
 		const keys = context.keys()
@@ -46,7 +54,7 @@ Doc.getInitialProps = async function() {
 				.split('.')
 				.slice(0, -1)
 				.join('.')
-			const value = values[index]			
+			const value = values[index]
 			const parsejat = matter(value.default)
 			const titol = parsejat.data.titol;
 
@@ -58,7 +66,7 @@ Doc.getInitialProps = async function() {
 		return data
 	})(require.context('../../../content/docs/doc-primer/', true, /\.md$/))
 
-	return {	
+	return {
 
 		capitols
 	}

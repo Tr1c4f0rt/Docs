@@ -1,7 +1,7 @@
 ---
 titol: Sols
-ant: /docs/doc-primer/2_cami
-seg: /docs/doc-primer/4_poble
+ant: /docs/doc-primer/02_cami
+seg: /docs/doc-primer/04_poble
 ---
 Fa calor, el sol crema amb ganes i quasi no passa aire. A l’ombra és més suportable. La Rosa porta un senzill vestit de tires fet de cotó que l’ajuda a suportar la calorada. Té la mirada clavada al terra. Una mirada que traspassa la matèria i va molt més enllà. El cansament d’aquests dies nefastos és ben present al seu rostre. La seva vida s’ha trencat. Ha perdut la noció del temps. Tot va molt a poc a poc. L’escalfor del braç que li embolica les espatlles nues la reconforta, però no és suficient. No n’és. Tot se n’ha anat a la merda, res no té sentit i no sap què ha de fer. La veu de l’única persona que li queda en aquest món trenca el monòton carrisqueig de les cigales. 
 

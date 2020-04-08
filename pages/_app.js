@@ -1,9 +1,18 @@
 import App from 'next/app';
 import { Tina, TinaCMS } from 'tinacms';
 import { GitClient, GitMediaStore } from '@tinacms/git-client';
+import Gun from 'gun';
 import '../estil/estil.scss';
 
+// Gun Context
+import GunContext, {gunPeers} from '../utils/MyGun';
+let gun
 
+if(typeof window !== undefined){
+
+  gun = Gun();
+
+}
 
 class theApp extends App {
   constructor() {
@@ -17,14 +26,14 @@ class theApp extends App {
     this.cms.registerApi('git', client);
     this.cms.media.store = new GitMediaStore(client);
 
-    // Afegir Gun
-
   }
   render() {
     const { Component, pageProps } = this.props
     return (
       <Tina cms={this.cms}>
-        <Component {...pageProps} />
+        <GunContext.Provider value={gun}>
+          <Component {...pageProps} />
+        </GunContext.Provider>
       </Tina>
     )
   }

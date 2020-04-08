@@ -1,7 +1,7 @@
 ---
 titol: El món és com és
-ant: /docs/doc-primer/6_noi_molt_jove
-seg: /docs/doc-primer/8_tot_el_que_tinc
+ant: /docs/doc-primer/06_noi_molt_jove
+seg: /docs/doc-primer/08_tot_el_que_tinc
 ---
 
 La Rosa i en Marcos seuen al terra, just davant de la tomba d’en Juli. Ara fa una bona estona que no ploren. No saben en quin moment han deixat de plorar i s’han posat a parlar amb serenor. El sol ja tomba i les ombres comencen a allargar-se, però encara queda una bona estona de sol. 

@@ -1,6 +1,6 @@
 ---
 titol: No sortia a compte
-ant: /docs/doc-primer/8_tot_el_que_tinc
+ant: /docs/doc-primer/08_tot_el_que_tinc
 seg: /docs/doc-primer/10_more-t
 ---
 
