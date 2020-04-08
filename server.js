@@ -21,6 +21,7 @@ const handle = app.getRequestHandler()
 
 app.prepare().then(() => {
   const server = express()
+  const gunApp = express();
 
 
    server.use(cors())
@@ -33,8 +34,8 @@ app.prepare().then(() => {
     return handle(req, res)
   })
 
-  server.use(Gun.serve);
-  const gunServer = server.listen(gunPort);
+  gunApp.use(Gun.serve);
+  const gunServer = gunApp.listen(gunPort);
   const gun = Gun({	web: gunServer });
   global.Gun = Gun; 
   global.gun = gun;
