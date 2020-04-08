@@ -9,12 +9,12 @@ function Docs() {
     return (     
             <div className="hero is-fullheight">               
                 <div className="hero-body is-centered">
-                    <div className="tile is-parent">
-                        <article className="tile is-child notification card is-danger carta-doc">
+                    <div className="columns">
+                        <article className="column is-third notification card is-danger carta-doc">
                             <div className="card-content">
-                                <p className="title">
+                                <h1 className="title">
                                     Document Zero
-                            </p>
+                            </h1>
                                 <p className="subtitle">
                                     Ben aviat disponible. Et recomano començar pel document primer.
                             </p>
@@ -22,19 +22,18 @@ function Docs() {
                             <footer className="card-footer">
                                 <p className="card-footer-item">
                                     <Link href="/docs/doc-zero/">
-                                        <a className="button is-small is-static is-fullwidth">Llegir</a>
+                                        <a className="button is-medium is-static is-black is-fullwidth">Llegir</a>
                                     </Link>
                                 </p>
                             </footer>
                         </article>
-                    </div>
+                    
 
-
-                    <div className="tile is-parent">
-                        <article className="tile is-child notification card is-warning carta-doc">
+              
+                        <article className="column is-third notification card is-warning carta-doc">
                             <div className="card-content">
-                                <p className="title">
-                                   Document Primer</p>
+                                <h1 className="title">
+                                   Document Primer</h1>
                                 <p className="subtitle">
                                 La Rosa, en Marcos i en Pep són tres joves que es veuen forçats a emprendre un viatge
                                     a través d'una terra despoblada a causa de la misèria i la malaltia. De valors i conviccions ben diferents,
@@ -45,32 +44,33 @@ function Docs() {
                             <footer className="card-footer">
                                 <p className="card-footer-item">
                                     <Link href="/docs/doc-primer/">
-                                        <a className="button is-small is-fullwidth">Llegir</a>
+                                        <a className="button is-medium is-black is-fullwidth">Llegir</a>
                                     </Link>
                                 </p>
                             </footer>
-                        </article>
-                    </div>
+                        </article>              
 
-                    <div className="tile is-parent">
-                        <article className="tile is-child notification card is-dark carta-doc">
+                   
+                        <article className="column is-third notification card is-dark carta-doc">
 
                             <div className="card-content">
-                                <p className="title">
+                                <h1 className="title">
                                     Document Segon
-                            </p>
+                            </h1>
                                 <p className="subtitle">
                                     ...
                             </p>
                             </div>
                             <footer className="card-footer">
                                 <p className="card-footer-item">
-                                    <button className="button is-small is-static is-fullwidth">Llegir</button>
+                                    <button className="button is-medium is-static is-black is-fullwidth">Llegir</button>
                                 </p>
                             </footer>
 
                         </article>
+              
                     </div>
+
 
                 </div>
                 <div className="hero-foot">
