@@ -11,8 +11,7 @@ import FabricaCapitols from '../../../components/FabricaCapitols/';
 
 
 function Doc(props) {
-
-	const gun = useContext(GunContext);
+	
 	const { capitols } = props;
 
 	return (<Layout>
