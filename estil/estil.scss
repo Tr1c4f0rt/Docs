@@ -24,9 +24,18 @@
     
     p{
         padding-top: 0.5em;
-    }
-    
+    }    
    
+}
+
+.carta-capitol{
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .card-footer{
+        border-top: none; 
+     }
 }
 
 .v-total{
@@ -58,4 +67,29 @@
 
 .navegacio-capitols{
     margin-top: 4em;
+}
+
+.social{
+    position: fixed;
+    background-color: black;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 100%;
+    bottom: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8em;
+    a{
+        color: lightgray;
+        text-decoration: none;
+        margin-right: 1em;
+        &:hover{
+            font-weight: bold;
+        }
+    }
+    color: darkslategray;    
+
+    .social-contenidor{
+        display: flex;
+        justify-content: space-evenly;
+    }
 }

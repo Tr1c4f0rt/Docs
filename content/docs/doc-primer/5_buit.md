@@ -1,5 +1,7 @@
 ---
 titol: El Buit
+ant: /docs/doc-primer/4_poble
+seg: /docs/doc-primer/6_noi_molt_jove
 ---
 En Marcos té els ulls vermellosos de tant plorar, està agenollat davant de la muntanyeta de pedres. Dreta al seu costat, la Rosa el mira. Fa mala cara, es veu realment fatigada. Plorar, cansa; el desconsol esgota. Encara són a la part del darrere de la casa, sota l’ombra de la gran alzina. Al fons es veuen boscos i muntanyes llunyanes. Les cigales no callen, fa calor, aquí hi ha enterrat en Juli. Fa una bona estona que no es diuen res. Miren la muntanyeta de pedres, caminen, miren el cel, l’horitzó, la casa, creuen mirades, somiquen, ara s’abracen, caminen una mica més, miren la muntanyeta de pedres. Estan atrapats en els seus pensaments i no parlen. Agenollat davant de la tomba d’en Juli, en Marcos nota la mà de la Rosa a l’espatlla, hi posa la seva al damunt i finalment la Rosa trenca el silenci. 
 

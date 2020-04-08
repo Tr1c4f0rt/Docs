@@ -1,4 +1,5 @@
 import NavBar from './NavBar';
+import Social from './Social'
 
 function Layout(props) {
 
@@ -7,6 +8,9 @@ function Layout(props) {
                 <div>
                     {props.children}
                 </div>    
+                <div>
+                    <Social/>
+                </div>
             </div>)
 
 }

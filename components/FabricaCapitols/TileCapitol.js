@@ -9,7 +9,7 @@ function TileCapitol(props) {
   
     <div className="column is-one-quarter">
 
-        <div className="card">
+        <div className="card carta-capitol">
             <div className="card-content">
                 <p className="title">
                 {titol}

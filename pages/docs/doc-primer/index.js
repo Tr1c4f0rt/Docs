@@ -21,7 +21,7 @@ function Doc({capitols}){
                             Document Primer
                         </h1>       
 						<h2 className="subtitle">
-							Comença l'aventura</h2>                 
+							Comença el viatge</h2>                 
                     </div>
                 </div>
 

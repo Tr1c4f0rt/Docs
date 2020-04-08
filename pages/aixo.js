@@ -4,7 +4,6 @@ import Head from 'next/head';
 import ReactMarkdown from 'react-markdown'
 import { useLocalJsonForm } from 'next-tinacms-json'
 
-
 // Comps
 import Layout from '../components/Layout';
 
@@ -29,7 +28,6 @@ const Inici = ({ jsonFile }) => {
             }
         ],
     });
-
 
 
     return (

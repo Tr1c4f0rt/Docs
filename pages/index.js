@@ -32,10 +32,7 @@ const Inici = ({ jsonFile }) => {
       <section className="hero is-success is-fullheight">
         <div className="hero-body">
           <div className="container">
-                  <ReactMarkdown className="title">{data.intro}</ReactMarkdown> 
-            <p>
-              <code>const Docs = [];</code>
-            </p>           
+                  <ReactMarkdown className="title">{data.intro}</ReactMarkdown>
           </div>
         </div>
         <div className="hero-foot">
