@@ -1,12 +1,8 @@
-import React from 'react';
 import Gun from 'gun';
-
 const nomGraph = "docs-arrels";
 
 //definir peers gun
 export const gunPeers = [("https://localhost:8765/gun","https://prova-gun.herokuapp.com:8765/gun")];
-
-let GunContext = React.createContext();
 
 
 /**
@@ -50,9 +46,7 @@ export async function ultimCapitol(req, path) {
             return res
         },{wait: 0})
 
-
     }
-
 
 }
 
@@ -96,5 +90,3 @@ export function initGun() {
 
 }
 
-
-export default GunContext;

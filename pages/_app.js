@@ -4,15 +4,7 @@ import { GitClient, GitMediaStore } from '@tinacms/git-client';
 import Gun from 'gun';
 import '../estil/estil.scss';
 
-// Gun Context
-import GunContext, {gunPeers} from '../utils/MyGun';
-let gun
 
-if(typeof window !== undefined){
-
-  gun = Gun(gunPeers);
-
-}
 
 class theApp extends App {
   constructor() {
@@ -30,10 +22,8 @@ class theApp extends App {
   render() {
     const { Component, pageProps } = this.props
     return (
-      <Tina cms={this.cms}>
-        <GunContext.Provider value={gun}>
-          <Component {...pageProps} />
-        </GunContext.Provider>
+      <Tina cms={this.cms}>    
+          <Component {...pageProps} />      
       </Tina>
     )
   }

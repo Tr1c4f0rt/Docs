@@ -10,7 +10,7 @@ import {useEffect,useContext} from 'react';
 import {useRouter} from 'next/router';
 
 // Gun Context
-import GunContext, { initGun, ultimCapitol } from '../../../utils/MyGun';
+import { initGun, ultimCapitol } from '../../../utils/MyGun';
 
 // Comps
 import Layout from '../../../components/Layout';

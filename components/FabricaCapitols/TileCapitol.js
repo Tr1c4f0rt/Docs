@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import {useState,useEffect, useContext} from 'react';
-
 import {ultimCapitol} from '../../utils/MyGun';
 
 function TileCapitol(props) {
