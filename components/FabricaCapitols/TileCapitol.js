@@ -1,12 +1,11 @@
 import Link from 'next/link';
 import {useState,useEffect, useContext} from 'react';
 
-import GunContext,{ultimCapitol} from '../../utils/MyGun';
+import {ultimCapitol} from '../../utils/MyGun';
 
 function TileCapitol(props) {
 
-    const { titol, slug } = props.capitol;
-    const gun = useContext(GunContext);
+    const { titol, slug } = props.capitol;   
     const url = `${props.path}/${slug}`;
     const [llegit,setLlegit] = useState("is-dark");
 
