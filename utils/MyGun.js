@@ -4,7 +4,7 @@ import Gun from 'gun';
 const nomGraph = "docs-arrels";
 
 //definir peers gun
-export const gunPeers = [];
+export const gunPeers = [("https://localhost:8765/gun","https://prova-gun.herokuapp.com:8765/gun")];
 
 let GunContext = React.createContext();
 
