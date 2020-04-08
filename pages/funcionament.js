@@ -9,29 +9,34 @@ import { useLocalJsonForm } from 'next-tinacms-json'
 import Layout from '../components/Layout';
 import Brave from '../content/svg/logos/brave.svg';
 
-const Inici = ({ jsonFile }) => {
+const Funcionament = ({ jsonFile }) => {
 
     const [data] = useLocalJsonForm(jsonFile, {
+        label: 'Funcionament',
         fields: [
             {
-                name: 'ficcio',
-                label: 'És ficció',
+                name: 'intro',
+                label: 'Introducció',
                 component: 'textarea',
             },
             {
-                name: 'lluny',
-                label: 'Ve de Lluny',
+                name: 'privadesa',
+                label: 'Privadesa',
                 component: 'textarea',
             },
             {
-                name: 'aficio',
-                label: 'Ës una afició',
+                name: 'navegador',
+                label: 'Navegador',
+                component: 'textarea',
+            },
+            {
+                name: 'tancament',
+                label: 'Tancament',
                 component: 'textarea',
             }
         ],
     });
-
-
+    
 
     return (
         <Layout>
@@ -79,7 +84,7 @@ const Inici = ({ jsonFile }) => {
 
 // Getting data
 
-Inici.getInitialProps = async function () {
+Funcionament.getInitialProps = async function () {
     const indexData = await import(`../content/pages/Funcionament.json`);
     return {
         jsonFile: {
@@ -89,4 +94,4 @@ Inici.getInitialProps = async function () {
     }
 }
 
-export default Inici
+export default Funcionament
