@@ -1,9 +1,20 @@
+import React from 'react'
 import App from 'next/app';
 import { Tina, TinaCMS } from 'tinacms';
 import { GitClient, GitMediaStore } from '@tinacms/git-client';
 import Gun from 'gun/gun';
 import '../estil/estil.scss';
 
+// Create Gun instance and Context
+const gunPeers = ["https://prova-gun.herokuapp.com/gun"];
+const gun = Gun(gunPeers);
+export const gunContext = React.createContext();
+gunContext.displayName = "gunContext";
+
+const gunObject = {
+  gun,
+  nomGraph: "prova-docs"
+}
 
 
 class theApp extends App {
@@ -22,9 +33,11 @@ class theApp extends App {
   render() {
     const { Component, pageProps } = this.props
     return (
-      <Tina cms={this.cms}>    
-          <Component {...pageProps} />      
-      </Tina>
+      <gunContext.Provider value={gunObject}>
+        <Tina cms={this.cms}>    
+            <Component {...pageProps} />      
+        </Tina>
+      </gunContext.Provider>
     )
   }
 }

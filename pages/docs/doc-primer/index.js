@@ -10,7 +10,7 @@ import FabricaCapitols from '../../../components/FabricaCapitols/';
 
 
 function Doc(props) {
-	
+		
 	const { capitols } = props;
 
 	return (<Layout>

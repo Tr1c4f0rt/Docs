@@ -6,8 +6,11 @@ import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import glob from 'glob';
 import { useLocalMarkdownForm } from 'next-tinacms-markdown';
+import {useContext, useEffect} from 'react';
 import {useRouter} from 'next/router';
 
+// Context
+import {gunContext} from '../../../pages/_app';
 
 // Comps
 import Layout from '../../../components/Layout';
@@ -15,7 +18,17 @@ import Layout from '../../../components/Layout';
 export default function Chapter(props) {
   
   const path = useRouter().asPath;
-  
+
+  // Gun Sttuf  
+  const { gun, nomGraph} = useContext(gunContext);
+  const parts = path.split('/');
+  const doc = parts[2]; // Nom del document
+  const docKey = doc.split('-')[1];
+  console.log('docKey',docKey);
+  const capitol = parts[3];
+  console.log('capitol',capitol);
+
+  // Tina form options
   const formOptions = {
     label: 'Capítol',
     fields: [
@@ -29,6 +42,23 @@ export default function Chapter(props) {
   }
 
   const [data] = useLocalMarkdownForm(props, formOptions)
+
+  useEffect(()=>{
+
+
+    gun.get(nomGraph).get(docKey).get(capitol).get("llegit").put(true, (ack) => {
+
+      if (ack.err) {
+          console.error('Vaja...', ack.err);
+      }
+
+      console.log('set ha funcionat', ack);
+
+  });
+
+
+
+  },[])
 
   return (
     <Layout>   
