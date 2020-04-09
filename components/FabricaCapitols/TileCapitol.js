@@ -12,6 +12,8 @@ function TileCapitol(props) {
       
         ultimCapitol('get',url).then((res,err)=>{
 
+            console.log('res al component', res);
+
             if(err){
                 console.error(err);
             }     

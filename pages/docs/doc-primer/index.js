@@ -1,8 +1,7 @@
 
 // EN aquesta pàgina s'han de mostrar tots els capitols del doc 0
 import Head from 'next/head';
-import matter from 'gray-matter'
-import { useContext } from 'react';
+import matter from 'gray-matter';
 
 
 // Comps

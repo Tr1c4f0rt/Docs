@@ -1,7 +1,7 @@
 import App from 'next/app';
 import { Tina, TinaCMS } from 'tinacms';
 import { GitClient, GitMediaStore } from '@tinacms/git-client';
-import Gun from 'gun';
+import Gun from 'gun/gun';
 import '../estil/estil.scss';
 
 

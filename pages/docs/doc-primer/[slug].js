@@ -6,11 +6,8 @@ import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import glob from 'glob';
 import { useLocalMarkdownForm } from 'next-tinacms-markdown';
-import {useEffect,useContext} from 'react';
 import {useRouter} from 'next/router';
 
-// Gun Context
-import { initGun, ultimCapitol } from '../../../utils/MyGun';
 
 // Comps
 import Layout from '../../../components/Layout';
@@ -32,13 +29,6 @@ export default function Chapter(props) {
   }
 
   const [data] = useLocalMarkdownForm(props, formOptions)
-
-  useEffect(() => {
-   
-    initGun();
-    ultimCapitol('set',path);
-
-  }, [])
 
   return (
     <Layout>   

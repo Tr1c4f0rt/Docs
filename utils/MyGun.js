@@ -1,8 +1,11 @@
-import Gun from 'gun';
+import Gun from 'gun/gun';
 const nomGraph = "docs-arrels";
 
 //definir peers gun
 export const gunPeers = ["https://localhost:8765/gun","https://prova-gun.herokuapp.com:8765/gun"];
+
+
+const gun = Gun(gunPeers);
 
 
 /**
@@ -18,15 +21,12 @@ export async function ultimCapitol(req, path) {
         console.error('Request incorrecte, s\'esperava get o set i s\'ha rebut ', req);
 
     }
-
-    const gun = Gun(gunPeers);
-
+    
     // Break the path
     const parts = path.split('/');
     const doc = parts[2]; // Nom del document
     const docKey = doc.split('-')[1];
     const capitol = parts[3];
-
 
     if (req === 'set') {
         
@@ -37,13 +37,18 @@ export async function ultimCapitol(req, path) {
                 console.error('Vaja...', ack.err);
             }
 
+            console.log('set ha funcionat', ack);
+
         });
 
 
     } else {
 
-        return gun.get(nomGraph).get(docKey).get(capitol).get("llegit").once((res, key) => {
+        return gun.get(nomGraph).get(docKey).get(capitol).get("llegit").once((res) => {
+
+            console.log('resposta del get', res);
             return res
+
         },{wait: 0})
 
     }
@@ -56,8 +61,7 @@ export async function ultimCapitol(req, path) {
 export function initGun() {
 
     if (typeof window !== "undefined") {
-
-        const gun = Gun(gunPeers);
+        
 
         gun.get(nomGraph).once((res) => {
 
