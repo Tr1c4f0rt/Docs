@@ -15,16 +15,20 @@ function TileCapitol(props) {
     const docKey = doc.split('-')[1];    
     
     useEffect(() => {
-      
-        gun.get(nomGraph).get(docKey).get(slug).get("llegit").once((res) => {
+
+        async function updateReadProgress() {
+            gun.get(nomGraph).get(docKey).get(slug).get("llegit").once((res) => {
             
-            console.log('tenim resposta',res);
-
-            if(res===true){
-                setLlegit("is-light");
-            }           
-
-        })   
+                console.log('gun',res);
+    
+                if(res===true){
+                    setLlegit("is-light");
+                }           
+    
+            })   
+          }  
+      
+          updateReadProgress();
 
     }, [])
 
