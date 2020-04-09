@@ -28,8 +28,9 @@ export async function ultimCapitol(req, path) {
     const docKey = doc.split('-')[1];
     const capitol = parts[3];
 
-    if (req === 'set') {
-        
+    if (req === 'set') {        
+
+        console.log('S\'ha rebut un req de tipus set');
         
         gun.get(nomGraph).get(docKey).get(capitol).get("llegit").put(true, (ack) => {
 
@@ -41,12 +42,15 @@ export async function ultimCapitol(req, path) {
 
         });
 
-
     } else {
+
+        console.log(`S\'ha rebut un req de tipus get: ${capitol}`);
 
         return gun.get(nomGraph).get(docKey).get(capitol).get("llegit").once((res) => {
 
-            console.log('resposta del get', res);
+            console.log(`resposta del get ${capitol}`, res);
+
+
             return res
 
         },{wait: 0})

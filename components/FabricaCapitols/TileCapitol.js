@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import {useState,useEffect, useContext} from 'react';
+import {useState,useEffect} from 'react';
 import {ultimCapitol} from '../../utils/MyGun';
 
 function TileCapitol(props) {
@@ -12,7 +12,7 @@ function TileCapitol(props) {
       
         ultimCapitol('get',url).then((res,err)=>{
 
-            console.log('res al component', res);
+            console.log(`res al component ${slug}`, res);
 
             if(err){
                 console.error(err);
