@@ -29,16 +29,16 @@ class theApp extends App {
     this.cms.media.store = new GitMediaStore(client);
 
   }
-  
+
   render() {
     const { Component, pageProps } = this.props
-    return (
-      <gunContext.Provider value={gunObject}>
-        <Tina cms={this.cms}>    
-            <Component {...pageProps} />      
-        </Tina>
-      </gunContext.Provider>
-    )
+      return (
+        <gunContext.Provider value={gunObject}>
+          <Tina cms={this.cms}>    
+              <Component {...pageProps} />      
+          </Tina>
+        </gunContext.Provider>
+      )
   }
 }
 

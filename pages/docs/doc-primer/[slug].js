@@ -23,10 +23,8 @@ export default function Chapter(props) {
   const { gun, nomGraph} = useContext(gunContext);
   const parts = path.split('/');
   const doc = parts[2]; // Nom del document
-  const docKey = doc.split('-')[1];
-  console.log('docKey',docKey);
-  const capitol = parts[3];
-  console.log('capitol',capitol);
+  const docKey = doc.split('-')[1];  
+  const capitol = parts[3]; 
 
   // Tina form options
   const formOptions = {
@@ -50,13 +48,9 @@ export default function Chapter(props) {
 
       if (ack.err) {
           console.error('Vaja...', ack.err);
-      }
+      }      
 
-      console.log('set ha funcionat', ack);
-
-  });
-
-
+    });
 
   },[])
 

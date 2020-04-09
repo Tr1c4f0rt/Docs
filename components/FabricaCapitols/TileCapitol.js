@@ -17,14 +17,14 @@ function TileCapitol(props) {
     useEffect(() => {
       
         gun.get(nomGraph).get(docKey).get(slug).get("llegit").once((res) => {
-
-            console.log(`resposta del get ${slug}`, res);
+            
+            console.log('tenim resposta',res);
 
             if(res===true){
                 setLlegit("is-light");
             }           
 
-        },{wait: 0})   
+        })   
 
     }, [])
 
