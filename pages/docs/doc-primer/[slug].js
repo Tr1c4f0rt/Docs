@@ -9,16 +9,25 @@ import { useLocalMarkdownForm } from 'next-tinacms-markdown';
 import {useEffect,useContext} from 'react';
 import {useRouter} from 'next/router';
 
-// Gun Context
-import { initGun, ultimCapitol } from '../../../utils/MyGun';
 
 // Comps
 import Layout from '../../../components/Layout';
 
+let localStorage;
+
+if(typeof window !== "undefined"){
+
+  localStorage = window.localStorage;
+
+}
+
+
+
 export default function Chapter(props) {
   
   const path = useRouter().asPath;
-  
+  const slug = path.split('/')[3];
+    
   const formOptions = {
     label: 'Capítol',
     fields: [
@@ -33,10 +42,9 @@ export default function Chapter(props) {
 
   const [data] = useLocalMarkdownForm(props, formOptions)
 
-  useEffect(() => {
-   
-    initGun();
-    ultimCapitol('set',path);
+  useEffect(() => {   
+  
+    localStorage.setItem(slug,"llegit");
 
   }, [])
 

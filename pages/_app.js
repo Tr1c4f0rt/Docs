@@ -1,9 +1,8 @@
 import App from 'next/app';
+import React from 'react';
 import { Tina, TinaCMS } from 'tinacms';
 import { GitClient, GitMediaStore } from '@tinacms/git-client';
-import Gun from 'gun';
 import '../estil/estil.scss';
-
 
 
 class theApp extends App {
@@ -22,8 +21,8 @@ class theApp extends App {
   render() {
     const { Component, pageProps } = this.props
     return (
-      <Tina cms={this.cms}>    
-          <Component {...pageProps} />      
+      <Tina cms={this.cms}>  
+          <Component {...pageProps} />
       </Tina>
     )
   }
