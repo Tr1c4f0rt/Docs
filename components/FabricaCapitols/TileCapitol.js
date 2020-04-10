@@ -1,26 +1,30 @@
 import Link from 'next/link';
 import {useState,useEffect, useContext} from 'react';
-import {ultimCapitol} from '../../utils/MyGun';
+
+
+let localStorage;
+
+if(typeof window !== "undefined"){
+
+  localStorage = window.localStorage;
+
+}
+
 
 function TileCapitol(props) {
 
     const { titol, slug } = props.capitol;   
     const url = `${props.path}/${slug}`;
     const [llegit,setLlegit] = useState("is-dark");
+ 
 
     useEffect(() => {
       
-        ultimCapitol('get',url).then((res,err)=>{
-
-            if(err){
-                console.error(err);
-            }     
-     
-            if(res._.put==true){
-                setLlegit('is-light');
-            }
-
-        });      
+        const capitol = localStorage.getItem(slug);
+        
+        if(capitol === "llegit"){
+            setLlegit('is-light');
+        }
 
     }, [])
 
