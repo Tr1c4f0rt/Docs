@@ -67,7 +67,7 @@ const Funcionament = ({ jsonFile }) => {
                     <ReactMarkdown>{data.navegador}</ReactMarkdown>
 
 
-                    <a className="pastilla-brave" href="https://brave.com/trc866" target="_blank"><img alt="Descarregar el Navegador Brave" src="/svg/brave.svg"/></a>
+                    <a className="button pastilla-brave" href="https://brave.com/trc866" target="_blank"></a>
                     <ReactMarkdown>{data.tancament}</ReactMarkdown>  
                     <p></p>
                     <p>Atentament,</p>

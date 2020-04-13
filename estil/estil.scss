@@ -64,13 +64,25 @@
     border: solid gray 1px;
     border-radius: 12px;
     padding-top: 1.5em;
-    padding-bottom: -2em;
     padding-left: 1em;
     padding-right: 1em;
-    img{
-        max-width: 200px;
-    }
+    margin-bottom: 1em;
+    background-position: center; 
+    background-image: url("/svg/brave.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    width: 200px; 
+
    
+}
+
+.pastilla-brave-micro{   
+    img{
+        max-height: 16px;
+        vertical-align: baseline;
+    }
+    
 }
 
 .navegacio-capitols{

@@ -25,7 +25,7 @@ const Inici = ({ jsonFile }) => {
   return (
     <div>
       <Head>
-        <title>Document Zero</title>
+        <title>DOCS[Z]</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

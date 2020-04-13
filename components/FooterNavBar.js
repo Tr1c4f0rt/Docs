@@ -12,7 +12,7 @@ function FooterNavBar() {
         aixo: ""
     })
 
-    const { home, docs, priv } = isActive;
+    const { home, docs, priv, aixo } = isActive;
     const { pathname } = useRouter();
 
     useEffect(() => {
@@ -68,7 +68,7 @@ function FooterNavBar() {
             <ul>
                 <li className={home}>
                     <Link href="/">
-                        <a><b>DOCS</b></a>
+                        <a><b>DOCS[Z]</b></a>
                     </Link>
                 </li>
                 <li className={docs}>
@@ -82,7 +82,7 @@ function FooterNavBar() {
                 </Link>
                 </li>
 
-                <li><Link href="/aixo">
+                <li className={aixo}><Link href="/aixo">
                     <a>Sobre tot això</a>
                 </Link>
                 </li>

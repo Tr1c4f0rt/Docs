@@ -7,7 +7,7 @@ function NavBar(props) {
     const [isActive, setActive] = useState("");
     const [isFixed, setFixed] = useState("");
     const [isDropUp, setDropUp] = useState("");
-    const [titol,setTitol] = useState("DOCS");
+    const [titol,setTitol] = useState("DOCS[Z]");
     const [isBlack, setIfBlack] = useState("is-black");
 
     useEffect(()=>{
@@ -15,7 +15,7 @@ function NavBar(props) {
         //Dropdown Direction
         if(isHome){        
             setDropUp("has-dropdown-up");
-            setTitol("DOCS");
+            setTitol("DOCS[Z]");
             setIfBlack("");
         }
 

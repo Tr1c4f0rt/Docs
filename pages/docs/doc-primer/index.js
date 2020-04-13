@@ -26,7 +26,7 @@ function Doc(props) {
 						Document Primer
                         </h1>
 					<h2 className="subtitle">
-						Comença el viatge</h2>
+						<code>// DOCS[1]</code></h2>
 				</div>
 			</div>
 
