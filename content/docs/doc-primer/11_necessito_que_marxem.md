@@ -1,7 +1,7 @@
 ---
 titol: Necessito que marxem
 ant: /docs/doc-primer/10_more-t
-seg: /docs/doc-primer/
+seg: /docs/doc-primer/12_esperanca_desfeta
 ---
 Només una punteta de sol és visible darrere els turons, els últims rajos de llum del dia il·luminen el cel i planten cara a la nit fosca que s’obre pas. La Rosa i en Marcos s’han passat tot el dia als peus de la tomba d’en Juli. Estan molt cansats, però ja fa estona que no ploren. En Marcos mira de convèncer la Rosa que han de deixar la casa. Han de marxar. La Rosa comença a veure que ells dos sols, i sense bestiar, ho tenen molt difícil per tirar endavant, però es resisteix a deixar-ho tot enrere. Té por que no sigui una reacció precipitada, fruit del xoc que ha comportat la mort d’en Juli. Està confosa i no sap què té sentit i què no en té. 
 
