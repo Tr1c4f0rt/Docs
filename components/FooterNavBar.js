@@ -7,10 +7,12 @@ function FooterNavBar() {
     // Setting the is-active property to the propper node
     const [isActive, setActive] = useState({
         home: "",
-        docs: ""
+        docs: "",
+        priv: "",
+        aixo: ""
     })
 
-    const { home, docs } = isActive;
+    const { home, docs, priv } = isActive;
     const { pathname } = useRouter();
 
     useEffect(() => {
@@ -19,19 +21,41 @@ function FooterNavBar() {
             case "/":
                 setActive({
                     home: "is-active",
-                    docs: ""
+                    docs: "",
+                    priv: "",
+                    aixo: ""
                 })
                 break;
             case "/docs":
                 setActive({
                     home: "",
-                    docs: "is-active"
+                    docs: "is-active",
+                    priv: "",
+                    aixo: ""
+                })
+                break;
+            case "/funcionament":
+                setActive({
+                    home: "",
+                    docs: "",
+                    priv: "is-active",
+                    aixo: ""
+                })
+                break;
+            case "/aixo":
+                setActive({
+                    home: "",
+                    docs: "",
+                    priv: "",
+                    aixo: "is-active"
                 })
                 break;
             default:
                 setActive({
                     home: "",
-                    docs: ""
+                    docs: "",
+                    priv: "",
+                    aixo: ""
                 })
                 break;
         }
@@ -53,7 +77,7 @@ function FooterNavBar() {
                     </Link>
                 </li>
 
-                <li><Link href="/funcionament">
+                <li className={priv}><Link href="/funcionament">
                     <a>Privadesa</a>
                 </Link>
                 </li>

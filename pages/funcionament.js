@@ -6,8 +6,8 @@ import { useLocalJsonForm } from 'next-tinacms-json'
 
 
 // Comps
-import Layout from '../components/Layout';
-import Brave from '../content/svg/logos/brave.svg';
+import FooterNavBar from '../components/FooterNavBar';
+//import Brave from '/svg/brave.svg';
 
 const Funcionament = ({ jsonFile }) => {
 
@@ -36,10 +36,10 @@ const Funcionament = ({ jsonFile }) => {
             }
         ],
     });
-    
+
 
     return (
-        <Layout>
+        <div className="hero is-fullheight">
             <Head>
                 <title>Com funciona?</title>
                 <link rel="icon" href="/favicon.ico" />
@@ -49,34 +49,38 @@ const Funcionament = ({ jsonFile }) => {
                     <div className="container">
                         <h1 className="title">
                             Com funciona?
-                        </h1>     
+                        </h1>
                         <h1 className="subtitle">
                             Privadesa i altres qüestions
-                        </h1>                               
+                        </h1>
                     </div>
                 </div>
 
             </section>
 
-            <div className="container content is-medium v-centered">
+            <div className="hero-body content is-medium v-centered">
 
-                <section className="container tot-aixo-container">                  
+                <section className="container tot-aixo-container">
+                    <div className="container">
                     <ReactMarkdown>{data.intro}</ReactMarkdown>
                     <ReactMarkdown>{data.privadesa}</ReactMarkdown>
                     <ReactMarkdown>{data.navegador}</ReactMarkdown>
 
 
-                    <a className="button pastilla-brave" href="https://brave.com/trc866" target="_blank"><Brave/></a>
-                    <ReactMarkdown>{data.tancament}</ReactMarkdown>
+                    <a className="pastilla-brave" href="https://brave.com/trc866" target="_blank"><img alt="Descarregar el Navegador Brave" src="/svg/brave.svg"/></a>
+                    <ReactMarkdown>{data.tancament}</ReactMarkdown>  
                     <p></p>
                     <p>Atentament,</p>
                     <code>Tr1c4f0rt</code>
+                    </div>
                 </section>
 
-             
-            </div>
 
-        </Layout>
+            </div>
+            <div className="hero-foot">
+                <FooterNavBar />
+            </div>
+        </div>
     )
 }
 

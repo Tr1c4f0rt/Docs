@@ -8,7 +8,7 @@ function Layout(props) {
                 <div>
                     {props.children}
                 </div>    
-                <div>
+                <div className="footer-social-container">
                     <Social/>
                 </div>
             </div>)

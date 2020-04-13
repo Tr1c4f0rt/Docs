@@ -10,7 +10,7 @@ function Docs() {
             <div className="hero is-fullheight">               
                 <div className="hero-body is-centered">
                     <div className="columns">
-                        <article className="column is-third notification card is-danger carta-doc">
+                        <article className="column is-third notification card is-light carta-doc">
                             <div className="card-content">
                                 <h1 className="title">
                                     Document Zero
@@ -51,7 +51,7 @@ function Docs() {
                         </article>              
 
                    
-                        <article className="column is-third notification card is-dark carta-doc">
+                        <article className="column is-third notification card is-light carta-doc">
 
                             <div className="card-content">
                                 <h1 className="title">
@@ -78,9 +78,6 @@ function Docs() {
                 </div>
             </div>      
    )
-
-
-
 
 }
 

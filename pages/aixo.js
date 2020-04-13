@@ -5,7 +5,7 @@ import ReactMarkdown from 'react-markdown'
 import { useLocalJsonForm } from 'next-tinacms-json'
 
 // Comps
-import Layout from '../components/Layout';
+import FooterNavBar from '../components/FooterNavBar';
 
 const Inici = ({ jsonFile }) => {
 
@@ -31,7 +31,7 @@ const Inici = ({ jsonFile }) => {
 
 
     return (
-        <Layout>
+        <div className="hero is-fullheight">
             <Head>
                 <title>Tot això...</title>
                 <link rel="icon" href="/favicon.ico" />
@@ -41,31 +41,41 @@ const Inici = ({ jsonFile }) => {
                     <div className="container">
                         <h1 className="title">
                             Tot això...
-                        </h1>                        
+                        </h1>
                     </div>
                 </div>
 
             </section>
 
-            <div className="container content is-medium v-centered">
+            <section className="hero-body tot-aixo-container">
+                <div className="container content is-medium">
 
-                <section className="container tot-aixo-container">
-                    <h2 className="is-title">És ficció</h2>
-                    <ReactMarkdown>{data.ficcio}</ReactMarkdown>
-                </section>
+                    <section className="container tot-aixo-container">
+                        <h2 className="is-title">És ficció</h2>
+                        <ReactMarkdown>{data.ficcio}</ReactMarkdown>
+                    </section>
 
-                <section className="container tot-aixo-container">
-                    <h2 className="is-title">Ve de lluny</h2>
-                    <ReactMarkdown>{data.lluny}</ReactMarkdown>
-                </section>
+                    <section className="container tot-aixo-container">
+                        <h2 className="is-title">Ve de lluny</h2>
+                        <ReactMarkdown>{data.lluny}</ReactMarkdown>
+                    </section>
 
-                <section className="container tot-aixo-container">
-                    <h2 className="is-title">És una afició</h2>
-                    <ReactMarkdown>{data.aficio}</ReactMarkdown>
-                </section>
+                    <section className="container tot-aixo-container">
+                        <h2 className="is-title">És una afició</h2>
+                        <ReactMarkdown>{data.aficio}</ReactMarkdown>
+                    </section>
+                    <section className="container tot-aixo-container">
+                        <p>Atentament,</p>
+                        <code>Tr1c4f0rt</code>
+                    </section>
+                   
+                </div>
+            </section>
+            <div className="hero-foot">
+                <FooterNavBar />
             </div>
 
-        </Layout>
+        </div>
     )
 }
 

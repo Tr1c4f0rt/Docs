@@ -6,6 +6,7 @@
 
 .tot-aixo-container{
     margin-top: 2em;
+    align-items: flex-start !important;
 }
 
 .carta-doc{
@@ -59,14 +60,27 @@
 }
 
 .pastilla-brave{
-    margin:2em;
-    svg{
+
+    border: solid gray 1px;
+    border-radius: 12px;
+    padding-top: 1.5em;
+    padding-bottom: -2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    img{
         max-width: 200px;
     }
+   
 }
 
 .navegacio-capitols{
     margin-top: 4em;
+}
+
+.footer-social-container{
+
+    margin-top: 6em;
+
 }
 
 .social{
@@ -93,3 +107,4 @@
         justify-content: space-evenly;
     }
 }
+
