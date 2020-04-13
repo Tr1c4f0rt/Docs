@@ -52,7 +52,11 @@ export default function Chapter(props) {
   return (
     <Layout>
       <Head>
-      <title>{data.frontmatter.titol} - Document Primer</title>
+        <title>{data.frontmatter.titol} - Document Primer</title>
+        <meta name="twitter:card" content="summary" />       
+        <meta name="twitter:title" content="DOCS[z] Xarxes d'amor" />
+        <meta name="twitter:description" content="Narrativa de ficció en català." />
+        <meta name="twitter:image" content="/img/docsz.png" />
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </Head>
       <div className="container">
@@ -65,7 +69,7 @@ export default function Chapter(props) {
             <Link href={data.frontmatter.ant}>
               <a className="button is-small">Anterior</a>
             </Link>
-            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text={`M'acabo de llegir el capítol "${data.frontmatter.titol}" de Document Primer #DOCS[Z]`} data-via="tr1c4f0rt" data-show-count="false">Comparteix-me a Twitter</a>
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text={`M'acabo de llegir el capítol "${data.frontmatter.titol}" de Document Primer #docsZ`} data-via="tr1c4f0rt" data-show-count="false">Comparteix-me a Twitter</a>
             <Link href={data.frontmatter.seg}>
               <a className="button  is-small">Següent</a>
             </Link>

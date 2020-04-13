@@ -18,6 +18,11 @@ function Doc(props) {
 		<Head>
 			<title>Document Primer</title>
 			<link rel="icon" href="/favicon.ico" />
+			<meta name="twitter:card" content="summary" />
+			<meta name="twitter:url" content="https://docs-z.now.sh/docs/doc-primer/" />
+			<meta name="twitter:title" content="DOCS[z] Xarxes d'amor" />
+			<meta name="twitter:description" content="Narrativa de ficció en català." />
+			<meta name="twitter:image" content="/img/docsz.png" />
 		</Head>
 		<section className="hero is-light">
 			<div className="hero-body">
