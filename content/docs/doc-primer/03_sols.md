@@ -11,7 +11,9 @@ Fa calor, el sol crema amb ganes i quasi no passa aire. A l’ombra és més sup
 
 La Rosa el mira i veu com les llàgrimes també li baixen per les galtes. 
 
-—O hi ha flama o no n’hi ha. Una flama apagada no és res. Només un record, el record d’una flama encesa, viva i canviant, que il·luminava i escalfava el seu voltant. Emocionada per les paraules d’en Marcos, la Rosa l’abraça amb força. Ell prova de continuar parlant, però no pot. Té un nus a la gola. S’abracen amb força a l’ombra d’un gran arbre. Als seus peus hi ha una muntanyeta de pedres. En Marcos intenta dir-li alguna cosa, però no se’n surt. Se li trenca la veu. La Rosa l’abraça i ell se sent molt culpable. Finalment pot articular algunes paraules: 
+—O hi ha flama o no n’hi ha. Una flama apagada no és res. Només un record, el record d’una flama encesa, viva i canviant, que il·luminava i escalfava el seu voltant. Emocionada per les paraules d’en Marcos, la Rosa l’abraça amb força. Ell prova de continuar parlant, però no pot. Té un nus a la gola. S’abracen amb força a l’ombra d’un gran arbre. Als seus peus hi ha una muntanyeta de pedres. 
+
+En Marcos intenta dir-li alguna cosa, però no se’n surt. Se li trenca la veu. La Rosa l’abraça i ell se sent molt culpable. Finalment pot articular algunes paraules: 
 
 —No he pogut arribar abans, Rosa... no he pogut. 
 

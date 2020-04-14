@@ -3,7 +3,9 @@ titol: More't
 ant: /docs/doc-primer/9_no_sortia_a_compte
 seg: /docs/doc-primer/11_necessito_que_marxem
 ---
-En Marcos s’afanya a exposar les virtuts del que porta a la bossa de pell i al mocador de farcell. Porta quatre formatges. Bé, tres i mig. Tres i mig que serien cinc si ell no se n’hagués menjat mig durant el viatge i si el malparit encaputxat no l’hagués robat vilment al mig del bosc. Bé, a banda dels tres formatges, en Marcos porta dues ampolletes d’oli de cop, dues ampolletes de tintura d’àrnica, dues terrinetes de crema de trementinaire, dues terrinetes de crema de camamilla, una ampolleta de xarop d’hisop, una bosseta d’herba de la gangrena, una bossa de te de roca i llavors, llavors originals variades de flors, plantes i verdures. 
+En Marcos s’afanya a exposar les virtuts del que porta a la bossa de pell i al mocador de farcell. Porta quatre formatges. Bé, tres i mig. Tres i mig que serien cinc si ell no se n’hagués menjat mig durant el viatge i si el malparit encaputxat no l’hagués robat vilment al mig del bosc. 
+
+Bé, a banda dels tres formatges, en Marcos porta dues ampolletes d’oli de cop, dues ampolletes de tintura d’àrnica, dues terrinetes de crema de trementinaire, dues terrinetes de crema de camamilla, una ampolleta de xarop d’hisop, una bosseta d’herba de la gangrena, una bossa de te de roca i llavors, llavors originals variades de flors, plantes i verdures. 
 
 —Jo, d’això, no en faré res —diu el farmacèutic amb un posat fred i distant. 
 

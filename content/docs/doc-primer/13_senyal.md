@@ -1,7 +1,7 @@
 ---
 titol: El senyal
 ant: /docs/doc-primer/12_esperanca_desfeta
-seg: /docs/doc-primer/
+seg: /docs/doc-primer/14_agressio
 ---
 En Fèlix, un dels guerrillers, observa amb els prismàtics com un home cepat tira en Marcos a terra. En Fèlix està en un cingle, juntament amb en Martí i en Julià. En Fèlix dissimula la silueta en situar-se a l’interior d’un arbust. Els seus companys l’esperen un tros enrere, coberts pel bosc, amb el genoll clavat al terra, cobrint cadascun el seu sector. En Fèlix segueix l’escena des de la llunyania, veu com en Marcos s’aixeca i s’allunya caminant. No el perd de vista en cap moment. 
 

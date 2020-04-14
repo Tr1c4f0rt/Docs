@@ -11,18 +11,18 @@ import FabricaCapitols from '../../../components/FabricaCapitols/';
 
 
 function Doc(props) {
-	
+
 	const { capitols } = props;
 
 	return (<Layout>
 		<Head>
-			<title>Document Primer</title>
+			<title>DOCS[z] Document Primer</title>
 			<link rel="icon" href="/favicon.ico" />
 			<meta name="twitter:card" content="summary" />
 			<meta name="twitter:url" content="https://docs-z.now.sh/docs/doc-primer/" />
-			<meta name="twitter:title" content="DOCS[z] Xarxes d'amor" />
+			<meta name="twitter:title" content="DOCS[z] Document Primer" />
 			<meta name="twitter:description" content="Narrativa de ficció en català." />
-			<meta name="twitter:image" content="/img/docsz.png" />
+			<meta name="twitter:image" content="https://docs-z.now.sh/img/docsz.png" />
 		</Head>
 		<section className="hero is-light">
 			<div className="hero-body">
@@ -80,5 +80,3 @@ Doc.getInitialProps = async function () {
 
 
 export default Doc
-
-
